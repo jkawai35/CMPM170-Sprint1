@@ -20,7 +20,5 @@ public class PlayerMovement : MonoBehaviour
         moveInput.Normalize();
 
         rb2d.velocity = moveInput * moveSpeed;
-
-
     }
 }
