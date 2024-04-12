@@ -16398,6 +16398,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moneyText: {fileID: 435227269}
 <<<<<<< HEAD
+<<<<<<< HEAD
   money: 0
   price: 100
   priceIncrease: 100
@@ -16409,6 +16410,12 @@ MonoBehaviour:
   baseRate: 1
   multiplier: 1
   idleTime: 0
+=======
+  money: 0
+  moneyRate: 0
+  price: 100
+  priceIncrease: 100
+>>>>>>> parent of f369534 (Fixed float to int issue and text)
 --- !u!1 &1604012776
 GameObject:
   m_ObjectHideFlags: 0
@@ -16931,7 +16938,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7358003116830568118, guid: 961419dc4cc629447ad7fa2902d5d0d8, type: 3}
       propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: upgrade
+      value: openUpgrade
       objectReference: {fileID: 0}
     - target: {fileID: 7358003116830568118, guid: 961419dc4cc629447ad7fa2902d5d0d8, type: 3}
       propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName

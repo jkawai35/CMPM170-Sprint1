@@ -6,8 +6,7 @@ using TMPro;
 public class Upgrade : MonoBehaviour
 {
     public TextMeshProUGUI moneyText;
-    private float money = 0.0f;
-    public int moneyToInt = 0;
+    public float money = 0;
     public int price = 10;
     public int priceIncrease = 10;
 
@@ -31,9 +30,7 @@ public class Upgrade : MonoBehaviour
         //Calculate currency earned during idle time
         float currencyEarned = idleTime * (baseRate * multiplier);
         money += currencyEarned;
-
-        moneyToInt = (int)Mathf.Round(money);
-        moneyText.text = "Money: " + moneyToInt;
+        moneyText.text = "Money: " + money;
 
         //reset last time activated
         lastTimeActivated = currentTime;
