@@ -6,28 +6,50 @@ using TMPro;
 public class Upgrade : MonoBehaviour
 {
     public TextMeshProUGUI moneyText;
-    public int money = 0;
-    public int moneyRate = 0;
-    public int price = 100;
-    public int priceIncrease = 100;
-    public void openUpgrade()
+    public float money = 0;
+    public int price = 10;
+    public int priceIncrease = 10;
+
+    public float baseRate = 1.0f;
+    public float multiplier = 1.0f;
+    public float idleTime = 0.0f;
+    private float lastTimeActivated;
+
+    private void Start()
     {
-        Debug.Log("Attempt to upgrade");
-        if (money >= price)
-        {
-            moneyRate += 10;
-            price = price + priceIncrease;
-            Debug.Log("Purchase upgrade");
-        }
-        else
-        {
-            Debug.Log("Insufficient funds");
-        }
+        lastTimeActivated = getCurrentTime();
+    }
+    void Update()
+    {
+        float currentTime = getCurrentTime();
+        float elapsedTime = currentTime - lastTimeActivated;
+
+        //Acculate idle time
+        idleTime += elapsedTime;
+
+        //Calculate currency earned during idle time
+        float currencyEarned = idleTime * (baseRate * multiplier);
+        money += currencyEarned;
+        moneyText.text = "Money: " + money;
+
+        //reset last time activated
+        lastTimeActivated = currentTime;
+        //reset idle time
+        idleTime = 0.0f;
+
     }
 
-    private void Update()
+    public float getCurrentTime()
     {
-        money += 1;
-        moneyText.text = "Money: " + money;
+        return Time.time;
+    }
+    public void upgrade()
+    {
+        if (money >= price)
+        {
+            multiplier += 0.1f;
+            money -= price;
+            price += priceIncrease;
+        }
     }
 }
