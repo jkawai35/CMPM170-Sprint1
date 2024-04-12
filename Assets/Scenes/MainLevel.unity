@@ -16399,6 +16399,7 @@ MonoBehaviour:
   moneyText: {fileID: 435227269}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   money: 0
   price: 100
   priceIncrease: 100
@@ -16411,10 +16412,15 @@ MonoBehaviour:
   multiplier: 1
   idleTime: 0
 =======
+=======
+>>>>>>> parent of f369534 (Fixed float to int issue and text)
   money: 0
   moneyRate: 0
   price: 100
   priceIncrease: 100
+<<<<<<< HEAD
+>>>>>>> parent of f369534 (Fixed float to int issue and text)
+=======
 >>>>>>> parent of f369534 (Fixed float to int issue and text)
 --- !u!1 &1604012776
 GameObject:
