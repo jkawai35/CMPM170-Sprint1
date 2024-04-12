@@ -16382,8 +16382,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4740845b16b99794a809d1759a0ea234, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 1824424891}
-  offset: {x: 0, y: 0, z: -10}
+  target: {fileID: 1604012780}
+  offset: {x: 0, y: 0, z: 0}
   damping: 0.5
   leftLimit: -7.5
   rightLimit: 8.5
