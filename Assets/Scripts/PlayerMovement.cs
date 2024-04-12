@@ -7,6 +7,8 @@ public class PlayerMovement : MonoBehaviour
     public float moveSpeed;
     public Rigidbody2D rb2d;
     private Vector2 moveInput;
+
+    public CoinManager cm;
     void Start()
     {
         
@@ -20,5 +22,13 @@ public class PlayerMovement : MonoBehaviour
         moveInput.Normalize();
 
         rb2d.velocity = moveInput * moveSpeed;
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Orb"))
+        {
+            Destroy(other.gameObject);
+        }
     }
 }
