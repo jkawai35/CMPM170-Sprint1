@@ -1,4 +1,3 @@
-
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
 --- !u!29 &1
@@ -16227,19 +16226,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moneyText: {fileID: 435227269}
-<<<<<<< HEAD
   money: 0
   moneyRate: 0
   price: 100
   priceIncrease: 100
-=======
-  moneyToInt: 0
-  price: 10
-  priceIncrease: 10
-  baseRate: 1
-  multiplier: 1
-  idleTime: 0
->>>>>>> parent of a0b11ff (Merge branch 'main' of https://github.com/jkawai35/CMPM170-Sprint1)
 --- !u!1 &1604012776
 GameObject:
   m_ObjectHideFlags: 0
