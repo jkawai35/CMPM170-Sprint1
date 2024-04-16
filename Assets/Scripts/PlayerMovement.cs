@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody2D rb2d;
     private Vector2 moveInput;
     public CoinManager cm;
+    public Upgrade upgrade;
     void Start()
     {
         
@@ -28,6 +29,11 @@ public class PlayerMovement : MonoBehaviour
         if (other.gameObject.CompareTag("Orb"))
         {
             Destroy(other.gameObject);
+
+            //adjust multiplier and money values
+            //money value can be changed
+            upgrade.multiplier += (float)0.5;
+            upgrade.money += 100;
         }
     }
 }
