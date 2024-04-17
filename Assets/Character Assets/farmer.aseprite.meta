@@ -1,0 +1,475 @@
+fileFormatVersion: 2
+guid: 8878c556ea69bcb4491b52a70e1778af
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: farmer_Frame_0
+    originalName: 
+    pivot: {x: 0.5, y: -0.16666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 46
+      y: 120
+      width: 34
+      height: 48
+    spriteID: 72f4137571e60354ebfaf40a6dfd8093
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 46, y: 120}
+  - name: farmer_Frame_1
+    originalName: 
+    pivot: {x: 0.5, y: -0.037037037}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 34
+      height: 54
+    spriteID: 2821c5656ab303943b8160984fd12d59
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: farmer_Frame_2
+    originalName: 
+    pivot: {x: 0.5, y: -0.037037037}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 66
+      width: 34
+      height: 54
+    spriteID: 660fc344cb6647848b006750df2a80ee
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 66}
+  - name: farmer_Frame_3
+    originalName: 
+    pivot: {x: 0.5, y: -0.16666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 46
+      y: 176
+      width: 34
+      height: 48
+    spriteID: c0eb0e6f67450bd44b5897bf971a171d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 46, y: 176}
+  - name: farmer_Frame_4
+    originalName: 
+    pivot: {x: 0.5, y: -0.037037037}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 128
+      width: 34
+      height: 54
+    spriteID: 94fd57d427d84444d94b398c6cd18fd7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 128}
+  - name: farmer_Frame_5
+    originalName: 
+    pivot: {x: 0.5, y: -0.037037037}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 190
+      width: 34
+      height: 54
+    spriteID: 7b90673b98aecdf4080c7db4d5d3d24f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 190}
+  - name: farmer_Frame_6
+    originalName: 
+    pivot: {x: 0.38235295, y: -0.17391305}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 88
+      y: 116
+      width: 34
+      height: 46
+    spriteID: 09800d564c1e4a84a88c5a637cc0fb1b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 88, y: 116}
+  - name: farmer_Frame_7
+    originalName: 
+    pivot: {x: 0.38235295, y: -0.16}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 46
+      y: 4
+      width: 34
+      height: 50
+    spriteID: 85c50e46fd964014b921302bef7a6c8a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 46, y: 4}
+  - name: farmer_Frame_8
+    originalName: 
+    pivot: {x: 0.38235295, y: -0.16666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 88
+      y: 4
+      width: 34
+      height: 48
+    spriteID: a1b4c74cbc675f143a60f5d5e228de74
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 88, y: 4}
+  - name: farmer_Frame_9
+    originalName: 
+    pivot: {x: 0.61764705, y: -0.17391305}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 88
+      y: 170
+      width: 34
+      height: 46
+    spriteID: ebbf195c09752874fa79aa232a8aeff7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 88, y: 170}
+  - name: farmer_Frame_10
+    originalName: 
+    pivot: {x: 0.61764705, y: -0.16}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 46
+      y: 62
+      width: 34
+      height: 50
+    spriteID: 2bfad83d0dfc41a4c9041aa83095ca9c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 46, y: 62}
+  - name: farmer_Frame_11
+    originalName: 
+    pivot: {x: 0.61764705, y: -0.16666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 88
+      y: 60
+      width: 34
+      height: 48
+    spriteID: 59963b48a0f75a4439ba687a42185658
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 88, y: 60}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -1899751393
+    name: farmer
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: farmer_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 15
+        y: 8
+        width: 34
+        height: 48
+      spriteId: 72f4137571e60354ebfaf40a6dfd8093
+    - name: farmer_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 15
+        y: 2
+        width: 34
+        height: 54
+      spriteId: 2821c5656ab303943b8160984fd12d59
+    - name: farmer_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 15
+        y: 2
+        width: 34
+        height: 54
+      spriteId: 660fc344cb6647848b006750df2a80ee
+    - name: farmer_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 15
+        y: 8
+        width: 34
+        height: 48
+      spriteId: c0eb0e6f67450bd44b5897bf971a171d
+    - name: farmer_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 15
+        y: 2
+        width: 34
+        height: 54
+      spriteId: 94fd57d427d84444d94b398c6cd18fd7
+    - name: farmer_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 15
+        y: 2
+        width: 34
+        height: 54
+      spriteId: 7b90673b98aecdf4080c7db4d5d3d24f
+    - name: farmer_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 19
+        y: 8
+        width: 34
+        height: 46
+      spriteId: 09800d564c1e4a84a88c5a637cc0fb1b
+    - name: farmer_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 19
+        y: 8
+        width: 34
+        height: 50
+      spriteId: 85c50e46fd964014b921302bef7a6c8a
+    - name: farmer_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 19
+        y: 8
+        width: 34
+        height: 48
+      spriteId: a1b4c74cbc675f143a60f5d5e228de74
+    - name: farmer_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 11
+        y: 8
+        width: 34
+        height: 46
+      spriteId: ebbf195c09752874fa79aa232a8aeff7
+    - name: farmer_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 11
+        y: 8
+        width: 34
+        height: 50
+      spriteId: 2bfad83d0dfc41a4c9041aa83095ca9c
+    - name: farmer_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 11
+        y: 8
+        width: 34
+        height: 48
+      spriteId: 59963b48a0f75a4439ba687a42185658
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 64, y: 64}

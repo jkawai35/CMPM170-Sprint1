@@ -9,19 +9,42 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 moveInput;
     public CoinManager cm;
     public Upgrade upgrade;
+
+    bool isMoving;
+
+    private Animator animator;
+
+    private void Awake()
+    {
+        animator = GetComponent<Animator>();
+    }
     void Start()
     {
-        
+ 
     }
 
     void Update()
     {
-        moveInput.x = Input.GetAxisRaw("Horizontal");
-        moveInput.y = Input.GetAxisRaw("Vertical");
+        if (!isMoving)
+        {
+            moveInput.x = Input.GetAxisRaw("Horizontal");
+            moveInput.y = Input.GetAxisRaw("Vertical");
 
-        moveInput.Normalize();
+            moveInput.Normalize();
 
-        rb2d.velocity = moveInput * moveSpeed;
+            rb2d.velocity = moveInput * moveSpeed;
+
+            if (moveInput != Vector2.zero)
+            {
+                animator.SetFloat("moveX", moveInput.x);
+                animator.SetFloat("moveY", moveInput.y);
+                isMoving = true;
+            }
+
+            animator.SetBool("isMoving", isMoving);
+        }
+        
+        isMoving = false;
     }
 
     void OnTriggerEnter2D(Collider2D other)
