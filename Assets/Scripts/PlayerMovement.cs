@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+
     public float moveSpeed;
     public Rigidbody2D rb2d;
     private Vector2 moveInput;
@@ -11,6 +12,11 @@ public class PlayerMovement : MonoBehaviour
     int orbCount = 0;
 
     bool isMoving;
+
+    private bool attacking = false;
+
+    private float timeToAttack = 0.25f;
+    private float timer = 0f;
 
     private Animator animator;
 
@@ -65,14 +71,16 @@ public class PlayerMovement : MonoBehaviour
         }
         else if (other.gameObject.CompareTag("Enemy"))
         {
-            Destroy(other.gameObject);
-
-            //adjust multiplier and money values
-            Upgrade.Instance.multiplier  -= (float)0.5;
-            Upgrade.Instance.money -= 200;
-            if (Upgrade.Instance.money <= 0 || Upgrade.Instance.multiplier <= 0)
+            if (!PlayerAttack.Instance.attacking)
             {
-                //game over UI here
+                Destroy(other.gameObject);
+                //adjust multiplier and money values
+                Upgrade.Instance.multiplier -= (float)0.5;
+                Upgrade.Instance.money -= 200;
+                if (Upgrade.Instance.money <= 0 || Upgrade.Instance.multiplier <= 0)
+                {
+                    //game over UI here
+                }
             }
         }
     }
