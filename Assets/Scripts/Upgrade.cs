@@ -8,12 +8,13 @@ public class Upgrade : MonoBehaviour
     public static Upgrade Instance;
 
     public TextMeshProUGUI moneyText;
+    public TextMeshProUGUI multText;
     public float money = 0.0f;
     public int moneyToInt = 0;
     public int price = 10;
     public int priceIncrease = 10;
 
-    public float baseRate = 1.0f;
+    public float baseRate = 10.0f;
     public float multiplier = 1.0f;
     public float idleTime = 0.0f;
     private float lastTimeActivated;
@@ -44,6 +45,7 @@ public class Upgrade : MonoBehaviour
 
         moneyToInt = (int)Mathf.Round(money);
         moneyText.text = "Money: " + moneyToInt;
+        multText.text = "Multiplier: " + multiplier;
 
         //reset last time activated
         lastTimeActivated = currentTime;

@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody2D rb2d;
     private Vector2 moveInput;
     public CoinManager cm;
-    public Upgrade upgrade;
+    int orbCount = 0;
 
     bool isMoving;
 
@@ -55,8 +55,25 @@ public class PlayerMovement : MonoBehaviour
 
             //adjust multiplier and money values
             //money value can be changed
-            upgrade.multiplier += (float)0.5;
-            upgrade.money += 100;
+            Upgrade.Instance.multiplier += (float)0.5;
+            Upgrade.Instance.money += 100;
+            orbCount += 1;
+            if (orbCount == 4)
+            {
+                //game win UI here
+            }
+        }
+        else if (other.gameObject.CompareTag("Enemy"))
+        {
+            Destroy(other.gameObject);
+
+            //adjust multiplier and money values
+            Upgrade.Instance.multiplier  -= (float)0.5;
+            Upgrade.Instance.money -= 200;
+            if (Upgrade.Instance.money <= 0 || Upgrade.Instance.multiplier <= 0)
+            {
+                //game over UI here
+            }
         }
     }
 }
