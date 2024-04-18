@@ -432,8 +432,8 @@ MonoBehaviour:
   enemyPrefab:
   - {fileID: 1612630727434403283, guid: 76e17d78dcf944d499eb4ccc778d26b4, type: 3}
   - {fileID: 2126013443767255136, guid: 0f46a966ccfdc614d8bf4138f3f37043, type: 3}
-  minimumSpawnTime: 2
-  maximumSpawnTime: 5
+  minimumSpawnTime: 0.5
+  maximumSpawnTime: 10
 --- !u!4 &221090715
 Transform:
   m_ObjectHideFlags: 0

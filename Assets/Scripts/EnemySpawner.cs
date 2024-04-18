@@ -14,6 +14,7 @@ public class EnemySpawner : MonoBehaviour
     private float maximumSpawnTime;
 
     private float timeUntilSpawn;
+    private float spawnCounter;
 
 
     // Start is called before the first frame update
@@ -32,6 +33,14 @@ public class EnemySpawner : MonoBehaviour
             int rand = Random.Range(0,enemyPrefab.Length);
             GameObject enemyToSpawn = enemyPrefab[rand]; //Spawn either bunny or crow
             Instantiate(enemyToSpawn, transform.position, Quaternion.identity);
+            spawnCounter += 1;
+            if (spawnCounter >= 10)
+            {
+                if (maximumSpawnTime > minimumSpawnTime)
+                {
+                    maximumSpawnTime -= 0.5f;
+                }
+            }
             SetTimeUntilSpawn();
         }
     }
