@@ -1055,7 +1055,7 @@ GameObject:
   - component: {fileID: 1219436343}
   - component: {fileID: 1219436342}
   - component: {fileID: 1219436341}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Barrier
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17693,6 +17693,67 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3fc709beb11ff4a2ab2a9cfbc4b4c0f7, type: 3}
+--- !u!1001 &9087294384393881034
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1183575309257304069, guid: 0f46a966ccfdc614d8bf4138f3f37043, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.63
+      objectReference: {fileID: 0}
+    - target: {fileID: 1183575309257304069, guid: 0f46a966ccfdc614d8bf4138f3f37043, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.38197
+      objectReference: {fileID: 0}
+    - target: {fileID: 1183575309257304069, guid: 0f46a966ccfdc614d8bf4138f3f37043, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1183575309257304069, guid: 0f46a966ccfdc614d8bf4138f3f37043, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1183575309257304069, guid: 0f46a966ccfdc614d8bf4138f3f37043, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1183575309257304069, guid: 0f46a966ccfdc614d8bf4138f3f37043, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1183575309257304069, guid: 0f46a966ccfdc614d8bf4138f3f37043, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1183575309257304069, guid: 0f46a966ccfdc614d8bf4138f3f37043, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1183575309257304069, guid: 0f46a966ccfdc614d8bf4138f3f37043, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1183575309257304069, guid: 0f46a966ccfdc614d8bf4138f3f37043, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2126013443767255136, guid: 0f46a966ccfdc614d8bf4138f3f37043, type: 3}
+      propertyPath: m_Name
+      value: Crow Sprite
+      objectReference: {fileID: 0}
+    - target: {fileID: 6929245739740437773, guid: 0f46a966ccfdc614d8bf4138f3f37043, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1824424891}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0f46a966ccfdc614d8bf4138f3f37043, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -17708,6 +17769,7 @@ SceneRoots:
   - {fileID: 1699591632}
   - {fileID: 1562382632}
   - {fileID: 422213673889116384}
+  - {fileID: 9087294384393881034}
   - {fileID: 1100080419008235082}
   - {fileID: 316488554}
   - {fileID: 240318148}
