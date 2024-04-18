@@ -13,11 +13,6 @@ public class PlayerMovement : MonoBehaviour
 
     bool isMoving;
 
-    private bool attacking = false;
-
-    private float timeToAttack = 0.25f;
-    private float timer = 0f;
-
     private Animator animator;
 
     private void Awake()
