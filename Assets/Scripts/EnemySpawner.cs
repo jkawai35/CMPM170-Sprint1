@@ -39,6 +39,7 @@ public class EnemySpawner : MonoBehaviour
                 if (maximumSpawnTime > minimumSpawnTime)
                 {
                     maximumSpawnTime -= 0.5f;
+                    spawnCounter = 0;
                 }
             }
             SetTimeUntilSpawn();
