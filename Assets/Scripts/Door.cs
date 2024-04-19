@@ -36,10 +36,12 @@ public class Door : MonoBehaviour
     {
         if (Upgrade.Instance.money >= price) // Check if the player has enough money
         {
-            door.SetActive(false); // Disable the door GameObject
             Upgrade.Instance.money -= price; // Deduct the price from the player's money
-            messageText.text = "Door bought successfully!"; // Show success message
+            //messageText.text = "Door bought successfully!"; // Show success message 
+            //The text kept staying on screen. I think its because once it's setActive is off, there
+            //is no way of the door knowing if the player walked away. I decided to comment it out.
             Debug.Log("Bought door");
+            door.SetActive(false); // Disable the door GameObject
         }
         else
         {
