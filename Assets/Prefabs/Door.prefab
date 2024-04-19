@@ -311,7 +311,7 @@ MonoBehaviour:
   door: {fileID: 3983821506402245399}
   price: 0
   minPrice: 100
-  maxPrice: 500
+  maxPrice: 400
   messageText: {fileID: 0}
 --- !u!61 &7831200604402033081
 BoxCollider2D:

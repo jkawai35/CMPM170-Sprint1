@@ -11,6 +11,8 @@ public class PlayerAttack : MonoBehaviour
 
     private float timeToAttack = 0.25f;
     private float timer = 0f;
+
+    public GameOverScreen gameOverScreen;
     private void Awake()
     {
         if (Instance == null)
@@ -49,6 +51,11 @@ public class PlayerAttack : MonoBehaviour
 
     private void attack()
     {
+        Upgrade.Instance.money -= 50;
+        if (Upgrade.Instance.money <= 0)
+        {
+            gameOverScreen.GameOver();
+        }
         attacking = true;
         attackArea.SetActive(attacking);
     }
