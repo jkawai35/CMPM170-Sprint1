@@ -2,10 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using Unity.VisualScripting;
 
 public class Upgrade : MonoBehaviour
 {
     public static Upgrade Instance;
+    public GameOverScreen gameOverScreen;
 
     public TextMeshProUGUI moneyText;
     public TextMeshProUGUI multText;
@@ -33,25 +35,27 @@ public class Upgrade : MonoBehaviour
     }
     void Update()
     {
-        float currentTime = getCurrentTime();
-        float elapsedTime = currentTime - lastTimeActivated;
+        if (!gameOverScreen.stopGame)
+        {
+            float currentTime = getCurrentTime();
+            float elapsedTime = currentTime - lastTimeActivated;
 
-        //Acculate idle time
-        idleTime += elapsedTime;
+            //Acculate idle time
+            idleTime += elapsedTime;
 
-        //Calculate currency earned during idle time
-        float currencyEarned = idleTime * (baseRate * multiplier);
-        money += currencyEarned;
+            //Calculate currency earned during idle time
+            float currencyEarned = idleTime * (baseRate * multiplier);
+            money += currencyEarned;
 
-        moneyToInt = (int)Mathf.Round(money);
-        moneyText.text = "Money: " + moneyToInt;
-        multText.text = "Multiplier: " + multiplier;
+            moneyToInt = (int)Mathf.Round(money);
+            moneyText.text = "Money: " + moneyToInt;
+            multText.text = "Multiplier: " + multiplier;
 
-        //reset last time activated
-        lastTimeActivated = currentTime;
-        //reset idle time
-        idleTime = 0.0f;
-
+            //reset last time activated
+            lastTimeActivated = currentTime;
+            //reset idle time
+            idleTime = 0.0f;
+        }
     }
 
     public float getCurrentTime()
@@ -66,5 +70,10 @@ public class Upgrade : MonoBehaviour
             money -= price;
             price += priceIncrease;
         }
+    }
+    public void resetCurrency()
+    {
+       money = 0.0f;
+        multiplier = 1.0f;
     }
 }

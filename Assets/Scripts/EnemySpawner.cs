@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
+    public GameOverScreen gameOverScreen;
+
     [SerializeField]
     private GameObject[] enemyPrefab;
 
@@ -26,23 +28,26 @@ public class EnemySpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        timeUntilSpawn -= Time.deltaTime;
-
-        if (timeUntilSpawn <= 0) 
+        if (!gameOverScreen.stopGame)
         {
-            int rand = Random.Range(0,enemyPrefab.Length);
-            GameObject enemyToSpawn = enemyPrefab[rand]; //Spawn either bunny or crow
-            Instantiate(enemyToSpawn, transform.position, Quaternion.identity);
-            spawnCounter += 1;
-            if (spawnCounter >= 10)
+            timeUntilSpawn -= Time.deltaTime;
+
+            if (timeUntilSpawn <= 0)
             {
-                if (maximumSpawnTime > minimumSpawnTime)
+                int rand = Random.Range(0, enemyPrefab.Length);
+                GameObject enemyToSpawn = enemyPrefab[rand]; //Spawn either bunny or crow
+                Instantiate(enemyToSpawn, transform.position, Quaternion.identity);
+                spawnCounter += 1;
+                if (spawnCounter >= 10)
                 {
-                    maximumSpawnTime -= 0.5f;
-                    spawnCounter = 0;
+                    if (maximumSpawnTime > minimumSpawnTime)
+                    {
+                        maximumSpawnTime -= 0.5f;
+                        spawnCounter = 0;
+                    }
                 }
+                SetTimeUntilSpawn();
             }
-            SetTimeUntilSpawn();
         }
     }
 

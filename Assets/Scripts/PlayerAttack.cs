@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerAttack : MonoBehaviour
 {
     public static PlayerAttack Instance;
+
     private GameObject attackArea = default;
 
     public bool attacking = false;
@@ -30,23 +31,27 @@ public class PlayerAttack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //calls attack function when key pressed down
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (!gameOverScreen.stopGame)
         {
-            attack();
-        }
-        if (attacking)
-        {
-            timer += Time.deltaTime;
-
-            //reset attack timer
-            if (timer >= timeToAttack)
+            //calls attack function when key pressed down
+            if (Input.GetKeyDown(KeyCode.Space))
             {
-                timer = 0;
-                attacking = false;
-                attackArea.SetActive(attacking);
+                attack();
+            }
+            if (attacking)
+            {
+                timer += Time.deltaTime;
+
+                //reset attack timer
+                if (timer >= timeToAttack)
+                {
+                    timer = 0;
+                    attacking = false;
+                    attackArea.SetActive(attacking);
+                }
             }
         }
+
     }
 
     private void attack()
