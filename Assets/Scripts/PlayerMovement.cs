@@ -5,10 +5,12 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
 
+    public GameOverScreen gameOverScreen;
+
     public float moveSpeed;
     public Rigidbody2D rb2d;
     private Vector2 moveInput;
-    public CoinManager cm;
+    //public CoinManager cm;
     int orbCount = 0;
 
     bool isMoving;
@@ -18,10 +20,6 @@ public class PlayerMovement : MonoBehaviour
     private void Awake()
     {
         animator = GetComponent<Animator>();
-    }
-    void Start()
-    {
- 
     }
 
     void Update()
@@ -62,6 +60,7 @@ public class PlayerMovement : MonoBehaviour
             if (orbCount == 4)
             {
                 //game win UI here
+                gameOverScreen.Win();
             }
         }
         else if (other.gameObject.CompareTag("Enemy"))
@@ -75,6 +74,7 @@ public class PlayerMovement : MonoBehaviour
                 if (Upgrade.Instance.money <= 0 || Upgrade.Instance.multiplier <= 0)
                 {
                     //game over UI here
+                    gameOverScreen.GameOver();
                 }
             }
         }

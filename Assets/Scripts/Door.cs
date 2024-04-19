@@ -32,7 +32,7 @@ public class Door : MonoBehaviour
         }
     }
 
-    void TryToBuyDoor()
+    public void TryToBuyDoor()
     {
         if (Upgrade.Instance.money >= price) // Check if the player has enough money
         {
