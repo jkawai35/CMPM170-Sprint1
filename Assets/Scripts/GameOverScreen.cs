@@ -25,6 +25,24 @@ public class GameOverScreen : MonoBehaviour
     {
         stopGame = false;
         upgrade.resetCurrency();
+
+        GameObject playerObject = GameObject.FindWithTag("Player");
+        if (playerObject != null)
+        {
+            playerObject.transform.position = new Vector2(0, 0);
+        }
+        else
+        {
+            Debug.LogError("Player not found. Make sure the player has the correct tag assigned.");
+        }
+        //GameObject enemyObject = GameObject.FindWithTag("Enemy");
+/*
+        while (enemyObject.activeSelf)
+        {
+            Destroy(enemyObject);
+        }
+*/
         gameObject.SetActive(false);
+
     }
 }

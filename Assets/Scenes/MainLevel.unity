@@ -562,7 +562,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6b38dab9a20f6249a03165093059ac7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameOverScreen: {fileID: 0}
+  gameOverScreen: {fileID: 1675899096}
   enemyPrefab:
   - {fileID: 1612630727434403283, guid: 76e17d78dcf944d499eb4ccc778d26b4, type: 3}
   - {fileID: 2126013443767255136, guid: 0f46a966ccfdc614d8bf4138f3f37043, type: 3}
@@ -17700,7 +17700,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.56078434}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -17738,6 +17738,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverText: {fileID: 2141422330}
+  upgrade: {fileID: 905792061}
   stopGame: 0
 --- !u!1001 &1699591632
 PrefabInstance:
@@ -17960,7 +17961,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.002301328, y: 0.0069045722}
+  m_Offset: {x: -0.0125436485, y: 0.01117222}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -17971,7 +17972,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.36017263, y: 0.4982651}
+  m_Size: {x: 0.41821247, y: 0.5443555}
   m_EdgeRadius: 0
 --- !u!95 &1824424893
 Animator:

@@ -26,22 +26,25 @@ public class PlayerMovement : MonoBehaviour
     {
         if (!isMoving)
         {
+            moveInput.x = Input.GetAxisRaw("Horizontal");
+            moveInput.y = Input.GetAxisRaw("Vertical");
+
+            moveInput.Normalize();
+
             if (!gameOverScreen.stopGame)
             {
-                moveInput.x = Input.GetAxisRaw("Horizontal");
-                moveInput.y = Input.GetAxisRaw("Vertical");
-
-                moveInput.Normalize();
-
                 rb2d.velocity = moveInput * moveSpeed;
             }
 
 
             if (moveInput != Vector2.zero)
             {
-                animator.SetFloat("moveX", moveInput.x);
-                animator.SetFloat("moveY", moveInput.y);
-                isMoving = true;
+                if (!gameOverScreen.stopGame)
+                {
+                    animator.SetFloat("moveX", moveInput.x);
+                    animator.SetFloat("moveY", moveInput.y);
+                    isMoving = true;
+                }
             }
 
             animator.SetBool("isMoving", isMoving);
@@ -80,7 +83,10 @@ public class PlayerMovement : MonoBehaviour
                     if (Upgrade.Instance.money <= 0 || Upgrade.Instance.multiplier <= 0)
                     {
                         //game over UI here
-                        isMoving = false;
+                        //isMoving = false;
+                        rb2d.velocity = Vector2.zero;
+                        animator.SetFloat("moveX", 0);
+                        animator.SetFloat("moveY", 0);
                         gameOverScreen.GameOver();
                     }
                 }
