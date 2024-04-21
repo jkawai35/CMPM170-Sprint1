@@ -8,6 +8,7 @@ public class GameOverScreen : MonoBehaviour
     public TextMeshProUGUI gameOverText;
     public Upgrade upgrade;
     public bool stopGame = false;
+
     public void GameOver()
     {
         gameOverText.text = "GAME OVER";
@@ -35,13 +36,13 @@ public class GameOverScreen : MonoBehaviour
         {
             Debug.LogError("Player not found. Make sure the player has the correct tag assigned.");
         }
-        //GameObject enemyObject = GameObject.FindWithTag("Enemy");
-/*
-        while (enemyObject.activeSelf)
+        GameObject[] prefabs = GameObject.FindGameObjectsWithTag("Enemy");
+
+        foreach (GameObject prefab in prefabs)
         {
-            Destroy(enemyObject);
+            Destroy(prefab);
         }
-*/
+
         gameObject.SetActive(false);
 
     }
