@@ -49,6 +49,11 @@ public class EnemySpawner : MonoBehaviour
                 SetTimeUntilSpawn();
             }
         }
+
+        if (gameOverScreen.stopGame)
+        {
+            spawnCounter = 0;
+        }
     }
 
     private void SetTimeUntilSpawn()
